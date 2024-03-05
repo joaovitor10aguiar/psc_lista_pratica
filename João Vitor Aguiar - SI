@@ -1,0 +1,23 @@
+//Crie um programa que solicita ao usuário dois números e, em seguida, mostra a soma desses números.
+
+import java.util.Scanner;
+    
+public class adicao {
+    public static void main(String[] args) {
+    int numeroUm;
+    int numeroDois;
+    int resultado;
+    
+    Scanner input = new Scanner(System.in);
+    System.out.print("Informe o primeiro número: ");
+    numeroUm = input.nextInt();
+    System.out.print("Informe o segundo número: ");
+    numeroDois = input.nextInt();
+    
+    resultado = numeroUm + numeroDois;
+    
+    System.out.println(numeroUm + "+" + numeroDois + "=" + resultado);
+    input.close();
+    
+    }
+}
