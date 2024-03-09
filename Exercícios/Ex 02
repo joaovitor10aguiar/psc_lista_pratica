@@ -1,0 +1,27 @@
+// Ex 02 - Crie um algoritmo que lê dois números, X e Y, e mostra o resto da divisão entre eles.
+
+import java.util.Scanner;
+
+public class divisao {
+
+    public static void main(String[] args) {
+        int x;
+        int y;
+        int resultado;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe o primeiro número: ");
+        x = input.nextInt();
+        System.out.print("Informe o segundo número: ");
+        y = input.nextInt();
+
+        resultado = x / y;
+
+        System.out.println(x + "/" + y + "=" + resultado);
+
+        input.close();
+
+
+    }
+
+}
