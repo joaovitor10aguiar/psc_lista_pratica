@@ -1,0 +1,29 @@
+// Ex 11 - Crie um programa que calcula a média simples de três notas fornecidas pelo usuário.
+
+import java.util.Scanner;
+
+public class notaMedia {
+    public static void main(String[] args) {
+
+        double notaUm;
+        double notaDois;
+        double notaTres;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe a nota do primeiro bimestre: ");
+        notaUm = input.nextDouble();
+
+        System.out.print("Informe a nota do segundo bimestre: ");
+        notaDois = input.nextDouble();
+
+        System.out.print("Informe a nota do terceiro bimestre: ");
+        notaTres= input.nextDouble();
+
+        double Media = (notaUm + notaDois + notaTres) / 3;
+
+        System.out.println("Você obteve uma nota média de: " + Media + " pontos" );
+
+        input.close();
+
+        }
+    }
