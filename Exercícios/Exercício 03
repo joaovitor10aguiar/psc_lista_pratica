@@ -1,0 +1,17 @@
+// Ex 03 - Crie um algoritmo que leia o primeiro nome do usuário e escreva uma saudação para ele.
+
+import java.util.Scanner;
+
+public class primeiroNome {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Infome o seu primeiro nome: ");
+        String nome = scanner.nextLine();
+        String saudacao = "Olá, " + nome + "! Seja bem-vindo!";
+
+        System.out.println(saudacao);
+
+        scanner.close();
+        }
+    }
