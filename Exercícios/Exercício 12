@@ -1,0 +1,22 @@
+// Ex 12 - Escreva um algoritmo para ler um valor e escrever o seu antecessor e o seu sucessor.
+
+import java.util.Scanner;
+
+public class escolhaNumero {
+    public static void main(String[] args) {
+
+        int numero;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe um número: ");
+        numero = input.nextInt();
+
+        int antecessor = numero - 1;
+        int sucessor = numero + 1;
+
+        System.out.println("O número escolhido foi: " + numero + ". Antecessor: " + antecessor + ". Sucessor: " + sucessor + ".");
+
+        input.close();
+
+        }
+    }
