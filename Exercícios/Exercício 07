@@ -1,0 +1,21 @@
+// Ex 07 - Crie um algoritmo que lê o salário de um funcionário, reajusta o salário em 7% e mostra o resultado.
+
+import java.util.Scanner;
+
+public class reajusteSalarial {
+    public static void main(String[] args) {
+
+        double salario;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite o seu salário atual: ");
+        salario = input.nextDouble();
+
+        double reajuste = salario + (0.07 * salario);
+
+        System.out.println("Parabéns! Você recebeu um reajuste de 7%, seu novo salário será de: R$" + reajuste);
+
+        input.close();
+
+        }
+    }
