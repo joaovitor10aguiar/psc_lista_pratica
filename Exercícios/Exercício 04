@@ -1,0 +1,26 @@
+// Ex 04 - Crie um algoritmo que solicite o nome, o endereço e o telefone do usuário e depois mostre os dados digitados.
+
+import java.util.Scanner;
+
+public class informacoes {
+    public static void main(String[] args) {
+        String nome;
+        String endereco;
+        int telefone;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Infome o seu nome: ");
+        nome = input.nextLine();
+
+        System.out.print("Infome o seu endereço: ");
+        endereco = input.nextLine();
+
+        System.out.print("Infome o seu telefone: ");
+        telefone = input.nextInt();
+
+        System.out.println("Nome: " + nome + ". Endereço: " + endereco + ". Telefone:  " + telefone);
+
+        input.close();
+
+        }
+    }
