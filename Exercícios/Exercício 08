@@ -1,0 +1,21 @@
+// Escreva um programa que converte uma quantidade de metros para centímetros.
+
+import java.util.Scanner;
+
+public class medidas {
+    public static void main(String[] args) {
+
+        double metros;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe o tamanho em metros: ");
+        metros = input.nextDouble();
+
+        double centimetros = metros * 100;
+
+        System.out.println(metros + " metros é equivalente a " + centimetros + " centímetros ");
+
+        input.close();
+
+        }
+    }
