@@ -1,0 +1,29 @@
+// Fluxograma Exercício 04 
+
+// Ex 04 - Crie um algoritmo que solicite o nome, o endereço e o telefone do usuário e depois mostre os dados digitados.
+
+Início
+|
+V
+Solicitar ao usuário o nome.
+|
+V
+Receber o nome.
+|
+V
+Solicitar ao usuário o endereço.
+|
+V
+Receber o endereço.
+|
+V
+Solicitar ao usuário o telefone.
+|
+V
+Receber o telefone.
+|
+V
+Exibir os dados fornecidos.
+|
+V
+Fim
