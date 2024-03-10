@@ -1,0 +1,47 @@
+// Ex 20 - Escrever um algoritmo que lê: - a porcentagem do IPI a ser acrescido no valor das peças - o código da peça 1,
+// valor unitário da peça 1, quantidade de peças 1 - o código da peça 2, valor unitário da peça 2, quantidade de peças 2.
+// O algoritmo deve calcular o valor total a ser pago e apresentar o resultado.
+
+import java.util.Scanner;
+
+public class inclusaoImpostos {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite a porcentagem do IPI a ser acrescido (%): ");
+        double ipi = input.nextDouble() / 100;
+
+        System.out.println("\nDigite os dados da peça 1:");
+        System.out.print("Código da peça: ");
+        int codigoPeca1 = input.nextInt();
+
+        System.out.print("Valor unitário da peça: R$ ");
+        double valorUnitarioPeca1 = input.nextDouble();
+        System.out.print("Quantidade de peças: ");
+        int quantidadePeca1 = input.nextInt();
+
+        System.out.println("\nDigite os dados da peça 2:");
+        System.out.print("Código da peça: ");
+        int codigoPeca2 = input.nextInt();
+        System.out.print("Valor unitário da peça: R$ ");
+        double valorUnitarioPeca2 = input.nextDouble();
+        System.out.print("Quantidade de peças: ");
+        int quantidadePeca2 = input.nextInt();
+
+
+        double totalPeca1 = valorUnitarioPeca1 * quantidadePeca1;
+        double totalPeca2 = valorUnitarioPeca2 * quantidadePeca2;
+        double subtotal = totalPeca1 + totalPeca2;
+
+
+        double valorIPI = subtotal * ipi;
+
+        double valorTotal = subtotal + valorIPI;
+
+        System.out.println("\nValor total a ser pago (incluindo IPI): R$ " + valorTotal);
+
+
+        input.close();
+
+        }
+    }
