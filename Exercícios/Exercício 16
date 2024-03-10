@@ -1,0 +1,28 @@
+// Ex 16 - Faça um programa que receba de entrada a distância total (em km) 
+// percorrida por um automóvel e a quantidade de combustível (em litros) consumida
+// para percorrê-la, calcule e imprima o consumo médio de combustível. Fórmula: distância/litro.
+
+import java.util.Scanner;
+
+public class consumoCombustivel {
+    public static void main(String[] args) {
+
+        double distancia;
+        double  combustivel;
+        double consumoMedio;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe a distância total percorrida (em Km): ");
+        distancia = input.nextDouble();
+
+        System.out.print("Informe a quantidade de combustível consumida (em litros): ");
+        combustivel = input.nextDouble();
+
+      consumoMedio = distancia / combustivel;
+
+            System.out.println("Este automóvel possui um consumo médio de: " + consumoMedio + "Km/Litro");
+
+        input.close();
+
+        }
+    }
