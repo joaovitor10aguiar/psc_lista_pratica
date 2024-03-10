@@ -1,0 +1,30 @@
+// Ex 17 - Faça um programa para o seguinte problema: Compraram-se N canetas iguais, que foram pagas com uma nota de Z reais, 
+// obtendo-se Y reais como troco. Quanto custou cada caneta? 
+
+import java.util.Scanner;
+
+public class primeiroNome {
+    public static void main(String[] args) {
+
+        double canetasIguais;
+        double  notaPaga;
+        double troco;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe a quantidade de canetas que foram compradas: ");
+        canetasIguais = input.nextDouble();
+
+        System.out.print("Informe o valor da nota recebida no momento do pagamento: ");
+        notaPaga = input.nextDouble();
+
+        System.out.print("Informe o valor do troco entregue ao cliente: ");
+        troco = input.nextDouble();
+
+        double valorCaneta = (notaPaga - troco) / canetasIguais;
+
+            System.out.println("Cada caneta custou R$" + valorCaneta );
+
+        input.close();
+
+        }
+    }
