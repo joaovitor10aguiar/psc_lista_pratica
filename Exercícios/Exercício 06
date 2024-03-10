@@ -1,0 +1,21 @@
+// Ex 06 - Crie um algoritmo que leia a idade de uma pessoa e calcule quantos dias essa pessoa já viveu.
+
+import java.util.Scanner;
+
+public class primeiroNome {
+    public static void main(String[] args) {
+
+        int idade;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite a sua idade: ");
+        idade = input.nextInt();
+// Considerando que cada ano possuísse 365 dias.
+
+        int diasVividos = idade * 365;
+        System.out.println("Você já viveu aproximadamente " + diasVividos + " dias.");
+
+        input.close();
+
+        }
+    }
