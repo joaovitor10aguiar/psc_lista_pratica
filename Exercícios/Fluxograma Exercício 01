@@ -1,0 +1,27 @@
+// Fluxograma Exercício 01 
+
+// Ex 01 - Crie um programa que solicita ao usuário dois números e, em seguida, mostra a soma desses números.
+
+
+Início
+|
+V
+Solicitar ao usuário o primeiro número.
+|
+V
+Receber o primeiro número.
+|
+V
+Solicitar ao usuário o segundo número.
+|
+V
+Receber o segundo número.
+|
+V
+Calcular a soma dos dois números.
+|
+V
+Exibir a soma.
+|
+V
+Fim.
