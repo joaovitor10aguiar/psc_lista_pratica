@@ -1,0 +1,21 @@
+// Ex 09 - Desenvolva um programa que calcula a área de um círculo, onde o raio é fornecido pelo usuário.
+
+import java.util.Scanner;
+
+public class areaCirculo {
+    public static void main(String[] args) {
+
+        double raio;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe o tamanho do raio do círculo: ");
+        raio = input.nextDouble();
+
+        double area = 3.14 * (raio * raio);
+
+        System.out.println("A aréa do círculo é de " + area + "cm quadrados");
+
+        input.close();
+
+        }
+    }
