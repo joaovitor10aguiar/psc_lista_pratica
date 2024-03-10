@@ -1,4 +1,4 @@
-//Crie um programa que solicita ao usuário dois números e, em seguida, mostra a soma desses números.
+// Ex 01 - Crie um programa que solicita ao usuário dois números e, em seguida, mostra a soma desses números.
 
 import java.util.Scanner;
     
