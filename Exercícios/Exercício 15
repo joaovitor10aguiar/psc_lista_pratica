@@ -1,0 +1,38 @@
+// Ex 15 - Construa um programa que calcule as raízes de uma equação de 2º grau (Ax2+Bx+C). 
+// Sendo que os valores A,B e C são fornecidos pelo usuário. Considere que tem duas raízes.
+
+import java.util.Scanner;
+
+public class equacao {
+    public static void main(String[] args) {
+
+        double a;
+        double  b;
+        double c;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe um número para o lugar de A: ");
+        a = input.nextDouble();
+
+        System.out.print("Informe um número para o lugar de B: ");
+        b = input.nextDouble();
+
+        System.out.print("Informe um número para o lugar de C: ");
+        c = input.nextDouble();
+
+        double delta = b * b - 4 * a * c;
+
+        if (delta >= 0) {
+            double raizOpcaoUm = (-b + Math.sqrt(delta)) / (2 * a);
+            double raizOpcaoDois = (-b - Math.sqrt(delta)) / (2 * a);
+
+            System.out.println("\nAs raízes da equação são: ");
+            System.out.println("Raiz 1: " + raizOpcaoUm);
+            System.out.println("Raiz 2: " + raizOpcaoDois);
+
+        } else {
+            System.out.println("A equação não possui raízes reais.");
+        }
+        input.close();
+
+        }
+    }
