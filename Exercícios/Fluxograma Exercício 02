@@ -1,0 +1,27 @@
+// Fluxograma Exercício 02 
+
+// Ex 02 - Crie um algoritmo que lê dois números, X e Y, e mostra o resto da divisão entre eles.
+
+Início
+|
+V
+Solicitar ao usuário o primeiro número (X)
+|
+V
+Receber o primeiro número (X)
+|
+V
+Solicitar ao usuário o segundo número (Y)
+|
+V
+Receber o segundo número (Y)
+|
+V
+Calcular o resto da divisão entre X e Y
+|
+V
+Exibir o resultado
+|
+V
+Fim
+
