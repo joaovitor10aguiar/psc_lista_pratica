@@ -1,0 +1,29 @@
+// Ex 18 - Cada degrau de uma escada tem X de altura. Faça um programa que receba 
+// essa altura e a altura que o usuário deseja alcançar subindo a escada, 
+// calcule e mostre quantos degraus ele deverá subir para atingir seu objetivo,
+// sem se preocupar com a altura do usuário. Todas as medidas fornecidas devem estar em metros.  
+
+
+import java.util.Scanner;
+
+public class subirDegraus {
+    public static void main(String[] args) {
+
+        double alturaDegrau;
+        double  alturaDesejada;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe a altura do degrau da escada: ");
+        alturaDegrau = input.nextDouble();
+
+        System.out.print("Informe a altura que você deseja alcançar: ");
+        alturaDesejada = input.nextDouble();
+
+       double quantidadeDegraus = alturaDesejada / alturaDegrau;
+
+       System.out.println("Será necessário subir " + quantidadeDegraus + " degraus para alcançar a altura desejada." );
+
+        input.close();
+
+        }
+    }
