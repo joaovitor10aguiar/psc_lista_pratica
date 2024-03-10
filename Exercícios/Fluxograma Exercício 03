@@ -1,0 +1,21 @@
+// Fluxograma Exercício 03
+
+// Ex 03 - Crie um algoritmo que leia o primeiro nome do usuário e escreva uma saudação para ele.
+
+Início
+|
+V
+Solicitar ao usuário o primeiro nome.
+|
+V
+Receber o primeiro nome.
+|
+V
+Construir a saudação com o primeiro nome.
+|
+V
+Exibir a saudação.
+|
+V
+Fim
+
