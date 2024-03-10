@@ -1,0 +1,30 @@
+// Ex 14 - Desenvolva um programa que, dados dois valores A e B, troque os valores
+// de forma que A passe a ter o valor de B e vice-versa. Exiba os valores após a troca.
+
+import java.util.Scanner;
+
+public class alteracaoNumeros {
+    public static void main(String[] args) {
+
+        int a;
+        int  b;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe um número para o lugar de A: ");
+        a = input.nextInt();
+
+        System.out.print("Informe um número para o lugar de B: ");
+        b = input.nextInt();
+
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("\nApós a troca: " );
+        System.out.println("Valor de A: " + a);
+        System.out.println("Valor de B: " + b);
+
+        input.close();
+
+        }
+    }
